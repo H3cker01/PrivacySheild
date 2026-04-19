@@ -1,1 +1,23 @@
 # PrivacySheild
+Network Privacy Shield & DHCP Remover
+A lightweight Windows utility designed to enhance local network privacy by removing your device from the router's DHCP client list and hiding your hostname from network neighbors.
+🛡️ Features
+DHCP Client Removal: Automatically switches your connection from DHCP to a Static IP. This stops the router from logging your device in its "Active Leases" list.
+Dynamic Gateway Detection: Automatically detects your router's IP address and configures your settings to match any network (192.168.0.1, 192.168.1.1, 10.0.0.1, etc.).
+Hostname Anonymization: Renames your PC to a generic WORKSTATION-01 to prevent personal identification.
+Network Stealth: Disables SMB/NetBIOS broadcasting so your PC doesn't show up in the "Network" folder of other computers on the same Wi-Fi.
+🚀 How It Works
+Stealth Mode: It runs net config server /hidden:yes to stop broadcasting your presence.
+Identity Shift: It uses PowerShell to force a computer rename.
+Static Assignment: It calculates a safe IP (ending in .50) based on your current gateway and applies it along with Google DNS (8.8.8.8).
+📥 Installation & Usage
+Download the PrivacyShield.exe from the Releases page.
+Right-click and Run as Administrator (required to modify network stack).
+Wait for the success message.
+Restart your computer to finalize the name change and stealth settings.
+🛠️ Technical Details
+Language: Python 3.x / PowerShell
+Permissions: Requires UAC Administrator privileges.
+Compatibility: Windows 10 & 11.
+⚠️ Disclaimer
+This tool modifies network adapter settings. It is intended for privacy enthusiasts and home lab use. If you are on a strictly managed corporate network, consult your admin before use, as static IPs can cause conflicts if not managed correctly.
