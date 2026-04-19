@@ -1,6 +1,6 @@
 # PrivacySheild
 Network Privacy Shield & DHCP Remover
-A lightweight Windows utility designed to enhance local network privacy by removing your device from the router's DHCP client list and hiding your hostname from network neighbors.
+A lightweight Windows utility designed to enhance local network privacy by removing your device from the router's DHCP client list and hiding your hostname from neighbors networks.
 ## 🛡️ Features
 DHCP Client Removal: Automatically switches your connection from DHCP to a Static IP. This stops the router from logging your device in its "Active Leases" list.
 Dynamic Gateway Detection: Automatically detects your router's IP address and configures your settings to match any network (192.168.0.1, 192.168.1.1, 10.0.0.1, etc.).
