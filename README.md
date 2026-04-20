@@ -22,7 +22,7 @@ Compatibility: Windows 10 & 11.
 ## ⚠️ Disclaimer
 This tool modifies network adapter settings. It is intended for privacy enthusiasts and home lab use. If you are on a strictly managed corporate network, consult your admin before use, as static IPs can cause conflicts if not managed correctly.
 ## 🔄 How to Revert Changes
-If you need to switch back to standard network settings (e.g., for a corporate environment or troubleshooting), use the included Restore_Defaults.exe.
+If you need to switch back to standard network settings (e.g., for a corporate environment or troubleshooting), use the included RestoreDefaults.exe.
 What the Restore Tool does:
 Enables Network Discovery: Runs net config server /hidden:no so your PC is visible to others again.
 Resets to DHCP: Switches your network adapter from a Static IP back to Automatic (DHCP) mode.
