@@ -29,3 +29,11 @@ Resets to DHCP: Switches your network adapter from a Static IP back to Automatic
 Resets DNS: Removes Google DNS and reverts to your router’s default DNS settings.
 Renames PC: Sets the hostname to a standard DESKTOP-RESTORED format.
 Note: Just like the main tool, a restart is required after running the restore utility to finalize the hostname change.
+# 🆘 Emergency Recovery: Comms Recovery Tool
+In the event that the network stack becomes corrupted or your connection is lost after using Privacy Shield or Restore Defaults, use the Privacy Shield Comms Recovery utility.
+What the Recovery Tool does:
+Automatic Wi-Fi Backup: Saves your Wi-Fi profiles/passwords before the reset.
+Deep Stack Purge: Runs netcfg -d to physically uninstall and reinstall all network adapters.
+Service Restoration: Re-enables critical services (WLAN/Wired AutoConfig) that may have been disabled.
+Auto-Restore: Re-injects your saved Wi-Fi passwords automatically upon the first login after reboot.
+Usage: Run PrivacyShieldCommsRecovery.exe as Administrator and Restart immediately when prompted.
